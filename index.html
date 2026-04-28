@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title> </title>
+
 <style>
 body {
     margin: 0;
@@ -11,62 +12,69 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
+
+/* 👇 PERFECT CARD SIZE (photo jaisa) */
 .container {
-    width: 360px;
-    height: 640px;
+    width: 380px;
+    max-width: 95%;
     background: #020c1b;
     border-radius: 25px;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     color: #fff;
     border: 2px solid #00d4ff;
-    box-shadow: 0 0 20px #00d4ff;
+    box-shadow: 0 0 25px #00d4ff;
 }
+
+/* PROFILE */
 .profile {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     border: 4px solid #00d4ff;
     margin: 0 auto 15px;
     background: url('https://clixcart.in/wp-content/uploads/2025/12/photo_2025-11-27_14-14-38-2.jpg') center/cover;
 }
+
+/* NAME */
 h1 {
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 2px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-/* 👇 FIX: center align list */
+/* LIST CENTER */
 .list {
     text-align: center;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 .list p {
-    margin: 10px 0;
-    font-size: 14px;
+    margin: 12px 0;
+    font-size: 15px;
     color: #cfd8dc;
 }
 
+/* BUTTON */
 .join-btn {
-    margin: 15px 0;
-    padding: 14px;
+    margin: 20px 0 15px;
+    padding: 15px;
     border-radius: 30px;
     background: linear-gradient(90deg, #00d4ff, #7b2ff7);
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     text-decoration: none;
     display: block;
 }
 
-/* 👇 NEW: Advertising box (no button look) */
+/* ADS BOX (same like image) */
 .ads-box {
-    margin: 10px 0 15px;
-    padding: 12px;
+    margin: 15px 0;
+    padding: 14px;
     border-radius: 12px;
-    border: 1px solid #444;
+    border: 1px solid #333;
     color: #aaa;
     background: #111827;
     font-size: 14px;
@@ -77,22 +85,27 @@ h1 {
     font-weight: bold;
 }
 
+/* QUOTE */
 .quote {
-    font-size: 13px;
-    margin: 10px 0;
+    font-size: 14px;
+    margin: 15px 0;
     color: #ddd;
-    line-height: 1.4;
+    line-height: 1.5;
 }
+
+/* FOOTER */
 .footer {
-    font-size: 11px;
+    font-size: 12px;
     color: #777;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
+
     <div class="profile"></div>
 
     <h1>PANKAJ BHARDHWAJ</h1>
@@ -106,9 +119,11 @@ h1 {
 
     <p>Join our learning community and grow your knowledge</p>
 
-    <a href="https://t.me/+cwSekVbp_sUxMjU1" class="join-btn">JOIN TELEGRAM</a>
+    <a href="https://t.me/+cwSekVbp_sUxMjU1" class="join-btn">
+        JOIN TELEGRAM
+    </a>
 
-    <!-- 👇 FINAL FIXED BOX -->
+    <!-- 👇 EXACT SAME STYLE -->
     <div class="ads-box" onclick="window.location.href='https://t.me/+yd0jEZBUi3lmZjg1'">
         Advertising By <span>AS Ads Service</span>
     </div>
@@ -121,6 +136,8 @@ h1 {
         Terms | Privacy | Disclaimer<br><br>
         This site is not part of Facebook™ or endorsed by Facebook™.
     </div>
+
 </div>
+
 </body>
 </html>
