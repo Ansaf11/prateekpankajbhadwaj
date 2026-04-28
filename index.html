@@ -2,23 +2,30 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title> </title>
+
+<!-- 👇 MOST IMPORTANT (mobile fix) -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title></title>
 
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #000814;
+
+    /* 👇 center + mobile spacing */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 10px;
 }
 
-/* 👇 PERFECT CARD SIZE (photo jaisa) */
+/* 👇 MOBILE PERFECT SIZE */
 .container {
-    width: 380px;
-    max-width: 95%;
+    width: 100%;
+    max-width: 420px;
     background: #020c1b;
     border-radius: 25px;
     padding: 25px;
@@ -59,7 +66,7 @@ h1 {
 /* BUTTON */
 .join-btn {
     margin: 20px 0 15px;
-    padding: 15px;
+    padding: 16px;
     border-radius: 30px;
     background: linear-gradient(90deg, #00d4ff, #7b2ff7);
     font-weight: bold;
@@ -69,7 +76,7 @@ h1 {
     display: block;
 }
 
-/* ADS BOX (same like image) */
+/* ADS BOX */
 .ads-box {
     margin: 15px 0;
     padding: 14px;
@@ -123,7 +130,7 @@ h1 {
         JOIN TELEGRAM
     </a>
 
-    <!-- 👇 EXACT SAME STYLE -->
+    <!-- 👇 CLICKABLE BOX -->
     <div class="ads-box" onclick="window.location.href='https://t.me/+yd0jEZBUi3lmZjg1'">
         Advertising By <span>AS Ads Service</span>
     </div>
